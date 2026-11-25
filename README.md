@@ -8,6 +8,8 @@ Automação em Python para separar, validar e auditar recibos mensais de pagamen
 
 Desenvolvido durante minha atuação como Analista de Dados no setor de logística, para atender uma demanda real de operação. A versão original foi entregue para uso interno; esta adaptação de portfólio preserva o fluxo técnico, sem dados ou identidade visual da empresa.
 
+Este repositório contém exclusivamente a versão independente de portfólio, com histórico Git próprio. A implementação corporativa original é mantida separadamente e não é necessária para executar esta versão.
+
 **Status da solução original:** V1.1.1 — entregue, homologada operacionalmente e em manutenção desde 19/11/2026, conforme confirmação da equipe responsável.
 
 ## Funcionalidades
@@ -64,18 +66,17 @@ Na raiz do projeto (Windows/PowerShell):
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -e ".[dev]"
-python -m pytest -q
+.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
+.\.venv\Scripts\python.exe -m pytest -q
 ```
 
-**56 testes automatizados aprovados** na validação da versão de portfólio em 25/11/2026 (Linux, Python 3.13). Os testes utilizam PDFs e configurações sintéticas, incluindo falhas simuladas e reprocessamento.
+**56 testes automatizados aprovados** na validação da versão de portfólio em 25/11/2026 (Linux e Windows, Python 3.13), incluindo a validação final após a atualização do nome. Os testes utilizam PDFs e configurações sintéticas, incluindo falhas simuladas e reprocessamento.
 
 Para executar a demonstração, copie `config/empresas.example.json` para `config/empresas.local.json`. Cada chave é um nome ou prefixo de empresa presente no cabeçalho dos recibos, associado ao CNPJ esperado. É possível cadastrar outras empresas, sem alterar o código. O formato de recibo suportado permanece o mesmo. A demonstração usa ALFA e um CNPJ fictício. Execute:
 
 ```powershell
 Copy-Item config/empresas.example.json config/empresas.local.json
-python -m kit_fechamento_rh.interface
+.\.venv\Scripts\python.exe -m kit_fechamento_rh.interface
 ```
 
 Selecione Setembro/2026, o PDF fictício no campo da empresa correspondente e uma pasta de destino nova, fora de qualquer pasta operacional. Não use dados reais para experimentar a aplicação.
