@@ -1,0 +1,32 @@
+RELATÓRIO DE PROCESSAMENTO - PROCESSADOR DE RECIBOS
+==================================================
+
+Data e hora: 25/11/2026 17:54:18
+Arquivo de origem: recibos_ficticios.pdf
+
+--- IDENTIFICAÇÃO ---
+Empresa esperada: ALFA
+Empresa encontrada: ALFA
+Competência esperada: Setembro/2026
+Competência encontrada: Setembro/2026
+
+--- VALIDAÇÃO DO PDF ---
+Páginas analisadas: 3
+Recibos distintos: 3
+Cópias idênticas ignoradas: 0
+Páginas aprovadas: 3
+Pendências: 0
+Lote: APROVADO
+
+--- GERAÇÃO ---
+PDFs gerados: 3
+Pasta de saída: demonstracao/saida/ALFA
+
+--- AUDITORIA DA SAÍDA ---
+Arquivos auditados: 3
+Arquivos aprovados: 3
+Problemas encontrados: 0
+Auditoria: APROVADA
+
+--- RESULTADO FINAL ---
+PROCESSAMENTO CONCLUÍDO COM SUCESSO

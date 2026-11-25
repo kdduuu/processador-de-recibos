@@ -1,0 +1,43 @@
+# Ambiente virtual
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# Ferramentas de desenvolvimento
+.pytest_cache/
+.ruff_cache/
+
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+config/empresas.local.json
+
+# Dados reais
+dados_reais/
+dados_teste/
+saidas/
+saidas_auditoria/
+logs/
+
+# Documentos do RH
+*.pdf
+*.xlsx
+*.xls
+
+# Possíveis exportações com dados
+*.csv
+
+# Arquivos compactados podem conter dados reais
+*.zip
+
+# Somente PDFs fictícios da demonstração são versionados
+!demonstracao/entrada/*.pdf
+!demonstracao/saida/**/*.pdf
+
+/testes recibos/
